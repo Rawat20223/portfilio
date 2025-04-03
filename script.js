@@ -82,3 +82,25 @@
             alert('Thank you for your message! I will get back to you soon.');
             form.reset();
         });
+
+ document.addEventListener("DOMContentLoaded", function() {
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const projectCards = document.querySelectorAll(".project-card");
+            
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const category = button.getAttribute("data-category");
+                    
+                    filterButtons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+                    
+                    projectCards.forEach(card => {
+                        if (category === "all" || card.getAttribute("data-category") === category) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
