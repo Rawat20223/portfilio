@@ -1,4 +1,4 @@
-:root {
+ :root {
             --primary-color: #ffdb70;
             --bg-color: #121212;
             --secondary-bg: #1e1e1e;
@@ -450,6 +450,36 @@
         }
 
         /* Projects Section */
+        .filter-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .filter-btn {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+    }
+    .filter-btn.active {
+        background-color: #ffc107;
+    }
+    .load-more-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .load-more-btn {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background-color: #ffc107;
+        color: white;
+        border-radius: 5px;
+    }
+   
+ 
         .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
