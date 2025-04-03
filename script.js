@@ -104,3 +104,19 @@
                 });
             });
         });
+
+function sendToWhatsApp(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+    
+    let whatsappMessage = `Hello, I am *${name}*.\n\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+    
+    let phone = "918882677949"; // Your WhatsApp number (with country code)
+    let whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    window.open(whatsappUrl, "_blank");
+}
