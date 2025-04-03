@@ -139,59 +139,98 @@
     </section>
 
     <!-- Projects Section -->
-   <section id="projects" class="projects">
-        <h2 class="section-title">My <span>Projects</span></h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(11).png?updatedAt=1743060236016" alt="Project 1">
-                </div>
-                <div class="project-info">
-                    <h3>Home Health Care</h3>
-                    <p>"Compassionate and professional home health care services tailored to your needs."</p>
-                    <div class="project-links">
-                        <a href="https://ik.imagekit.io/dv1rw2o90/WhatsApp%20Image%202025-01-25%20at%2011.20.43_048b7faf.jpg?updatedAt=1742465025343"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+  <section id="projects" class="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="graphic">Graphic</button>
+        <button class="filter-btn" data-category="web">Web Development</button>
+    </div>
+    <div class="projects-container" id="projects-container">
+        <div class="project-card" data-category="graphic">
+            <div class="project-img">
+                <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(11).png" alt="Project 1">
+            </div>
+            <div class="project-info">
+                <h3>Home Health Care</h3>
+                <p>"Compassionate and professional home health care services tailored to your needs."</p>
+                <div class="project-links">
+                    <a href="https://ik.imagekit.io/dv1rw2o90/the-blissfuull-hives.png?updatedAt=1743061074623"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-behance"></i> Behance</a>
-                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(13).png?updatedAt=1743068962646" alt="Project 2">
-                </div>
-                <div class="project-info">
-                    <h3>Navratri Special</h3>
-                    <p>"Celebrate Navratri with joy, devotion, and vibrant colors of festivity! 🪔✨"</p>
-                    <div class="project-links">
-                        <a href="https://ik.imagekit.io/dv1rw2o90/Cream%20and%20Red%20Traditional%20Happy%20Navratri%20Greeting%20Animated%20Social%20Media.mp4?updatedAt=1743068642818"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                       <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-behance"></i> Behance</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(12).png?updatedAt=1743061272988" alt="Project 3">
-                </div>
-                <div class="project-info">
-                    <h3>The Blissfuull Hives</h3>
-                    <p>The Blissful Hives – Nurturing special minds with care, learning, and growth. 🌿✨ #SpecialEducation #InclusiveLearning</p>
-                    <div class="project-links">
-                        <a href="https://ik.imagekit.io/dv1rw2o90/the-blissfuull-hives.png?updatedAt=1743061074623"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-behance"></i> Behance</a>
-                    </div>
-                </div>
-               
-            </div>
-
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(15).png?updatedAt=1743664416847" alt="Project 3">
-                </div>
-               <div class="project-info"> <h3>Socialchemy</h3> <p>Top digital marketing agency to enhance brand visibility, drive high-quality leads, and maximize conversions. Refine audience targeting for better engagement.</p> <div class="project-links"> <a href="https://thesocialchemy.com/"></i> Live Demo</a> <a href="https://github.com/Rawat20223"><i class="fab fa-github"></i> Github</a> </div> </div>
-               
             </div>
         </div>
-    </section>
+        <div class="project-card" data-category="graphic">
+            <div class="project-img">
+                <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(13).png" alt="Project 2">
+            </div>
+            <div class="project-info">
+                <h3>Navratri Special</h3>
+                <p>"Celebrate Navratri with joy, devotion, and vibrant colors of festivity!"</p>
+                <div class="project-links">
+                    <a href="https://ik.imagekit.io/dv1rw2o90/the-blissfuull-hives.png?updatedAt=1743061074623"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-behance"></i> Behance</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" data-category="graphic">
+            <div class="project-img">
+                <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(12).png" alt="Project 3">
+            </div>
+            <div class="project-info">
+                <h3>The Blissfuull Hives</h3>
+                <p>"Nurturing special minds with care, learning, and growth."</p>
+                <div class="project-links">
+                    <a href="https://ik.imagekit.io/dv1rw2o90/the-blissfuull-hives.png?updatedAt=1743061074623"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-behance"></i> Behance</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-img">
+                <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(15).png" alt="Project 4">
+            </div>
+            <div class="project-info">
+                <h3>Socialchemy</h3>
+                <p>"Top digital marketing agency to enhance brand visibility and drive leads."</p>
+                <div class="project-links">
+                    <a href="https://thesocialchemy.com/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-img">
+                <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(15).png" alt="Project 4">
+            </div>
+            <div class="project-info">
+                <h3>Socialchemy</h3>
+                <p>"Top digital marketing agency to enhance brand visibility and drive leads."</p>
+                <div class="project-links">
+                    <a href="https://thesocialchemy.com/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-img">
+                <img src="https://ik.imagekit.io/dv1rw2o90/Untitled%20design%20(15).png" alt="Project 4">
+            </div>
+            <div class="project-info">
+                <h3>Socialchemy</h3>
+                <p>"Top digital marketing agency to enhance brand visibility and drive leads."</p>
+                <div class="project-links">
+                    <a href="https://thesocialchemy.com/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://www.behance.net/dharmendrarawat2008"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-more-container">
+        <button id="load-more" class="load-more-btn"><a href="https://www.behance.net/dharmendrarawat2008" style="color: #ffff; text-decoration: none;">Load More</a></button>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
